@@ -39,7 +39,7 @@
     "prettier": "^3.0.3",
     "tailwindcss": "^3.3.3",
     "typescript": "^5.0.4",
-    "vite": "^5.1.5",
+    "vite": "^6.4.3",
     "vite-tsconfig-paths": "^4.3.1"
   },
   "engines": {
@@ -52,5 +52,10 @@
     "**/*.{ts,tsx}": [
       "eslint --fix"
     ]
+  },
+  "overrides": {
+    "esbuild": "^0.25.0",
+    "estree-util-value-to-estree": "^3.3.3",
+    "tar": "^7.5.22"
   }
 }
