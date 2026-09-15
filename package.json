@@ -62,7 +62,9 @@
     "turbo-stream": "^3.0.0",
     "react-router-dom": "^6.30.6",
     "react-router": "^6.30.6",
-    "undici": "^6.28.1",
-    "toml": "^4.2.0"
+    "toml": "^4.2.0",
+    "compression": "^1.8.2",
+    "morgan": "^1.12.1",
+    "postcss-selector-parser": "^6.1.3"
   }
 }
