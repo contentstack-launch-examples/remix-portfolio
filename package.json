@@ -2,16 +2,15 @@
   "private": true,
   "sideEffects": false,
   "scripts": {
-    "dev": "remix vite:dev",
-    "build": "remix vite:build",
-    "start": "remix-serve ./build/server/index.js",
-    "typecheck": "tsc"
+    "dev": "react-router dev",
+    "build": "react-router build",
+    "start": "react-router-serve ./build/server/index.js",
+    "typecheck": "react-router typegen && tsc"
   },
   "type": "module",
   "dependencies": {
     "@headlessui/react": "^1.7.19",
-    "@remix-run/node": "^2.12.1",
-    "@remix-run/react": "^2.12.1",
+    "@react-router/node": "^7.18.5",
     "contentstack": "^3.21.0",
     "framer-motion": "^11.0.8",
     "isbot": "^3.6.8",
@@ -19,14 +18,15 @@
     "prismjs": "^1.29.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router": "^7.18.5",
     "react-social-icons": "^6.6.0",
-    "remix-themes": "^1.5.1",
+    "remix-themes": "^2.0.4",
     "source-map-support": "^0.5.21"
   },
   "devDependencies": {
-    "@remix-run/dev": "^2.12.1",
+    "@react-router/dev": "^7.18.5",
+    "@react-router/serve": "^7.18.5",
     "@remix-run/eslint-config": "^2.12.1",
-    "@remix-run/serve": "^2.12.1",
     "@tailwindcss/typography": "^0.5.9",
     "@types/prismjs": "^1.26.0",
     "@types/react": "^18.0.35",
@@ -43,7 +43,7 @@
     "vite-tsconfig-paths": "^4.3.1"
   },
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=20.0.0"
   },
   "lint-staged": {
     "**/*.{ts, js, jsx,tsx,mdx}": [
@@ -55,14 +55,8 @@
   },
   "overrides": {
     "esbuild": "^0.25.0",
-    "estree-util-value-to-estree": "^3.3.3",
-    "tar": "^7.5.22",
     "vite": "^6.4.3",
     "qs": "^6.16.2",
-    "turbo-stream": "^3.0.0",
-    "react-router-dom": "^6.30.6",
-    "react-router": "^6.30.6",
-    "toml": "^4.2.0",
     "postcss-selector-parser": "^7.1.6"
   }
 }

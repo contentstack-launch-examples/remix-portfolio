@@ -1,13 +1,13 @@
-import { type LinksFunction, type LoaderFunctionArgs } from "@remix-run/node";
 import {
+  type LinksFunction,
+  type LoaderFunctionArgs,
   Links,
-  LiveReload,
   Meta,
   Outlet,
   Scripts,
   ScrollRestoration,
   useLoaderData,
-} from "@remix-run/react";
+} from "react-router";
 
 import stylesheet from "~/tailwind.css?url";
 import {
