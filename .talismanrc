@@ -2,4 +2,6 @@ fileignoreconfig:
 - filename: package-lock.json
   ignore_detectors:
   - filecontent
+- filename: app/contentstack.ts
+  checksum: ee4722e5b1f413df558567170b954098a41b20a4b5f165dac3cfb9795670d673
 version: '1.0'
